@@ -10,6 +10,8 @@ namespace CardGames
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed("Cards", "Cards.png");
+            SwinGame.LoadSoundEffectNamed("Slap", "slap.mp3");
+            SwinGame.LoadSoundEffectNamed("Slap2", "slap2.mp3");
             SwinGame.BitmapSetCellDetails(cards, 167, 250, 13, 5, 53);      // set the cells in the bitmap to match the cards
         }
 
