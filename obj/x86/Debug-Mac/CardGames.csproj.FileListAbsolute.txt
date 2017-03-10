@@ -28,3 +28,4 @@ E:\Swinburne\Development and Tools 1\2.1\QuickSnap\bin\Debug\nunit.framework.xml
 E:\Swinburne\Development and Tools 1\2.1\QuickSnap\obj\x86\Debug-Mac\CardGames.csprojResolveAssemblyReference.cache
 E:\Swinburne\Development and Tools 1\2.1\QuickSnap\obj\x86\Debug-Mac\SnapGame.exe
 E:\Swinburne\Development and Tools 1\2.1\QuickSnap\obj\x86\Debug-Mac\SnapGame.pdb
+E:\Swinburne\Development and Tools 1\2.1\QuickSnap\bin\Debug\Resources\fonts\Chunkfive.otf
