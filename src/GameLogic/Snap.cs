@@ -139,6 +139,8 @@ namespace CardGames.GameLogic
         /// </summary>
         public void PlayerHit(int player)
         {
+            string soundEffect = player == 0 ? "Slap" : "Slap2";
+            SwinGame.PlaySoundEffect(soundEffect);
             if (player >= 0 && player < _score.Length &&    // its a valid player
                  IsStarted &&                               // and the game is started
                  _topCards[0] != null && _topCards[0].Rank == _topCards[1].Rank) // and its a match

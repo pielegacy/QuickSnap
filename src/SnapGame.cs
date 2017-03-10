@@ -10,8 +10,9 @@ namespace CardGames
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed("Cards", "Cards.png");
-            SwinGame.LoadSoundEffectNamed("Slap", "slap.mp3");
-            SwinGame.LoadSoundEffectNamed("Slap2", "slap2.mp3");
+            SwinGame.LoadSoundEffectNamed("Slap", "slap.wav");
+            SwinGame.LoadSoundEffectNamed("Slap2", "slap2.wav");
+            // SwinGame.LoadSoundEffectNamed("Slap2", "slap2.mp3");
             SwinGame.BitmapSetCellDetails(cards, 167, 250, 13, 5, 53);      // set the cells in the bitmap to match the cards
         }
 
@@ -31,7 +32,8 @@ namespace CardGames
             {
                 if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) && SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
                 {
-                    // TODO : add sound effects
+                    SwinGame.PlaySoundEffect("Slap");
+                    SwinGame.PlaySoundEffect("Slap2");
                 }
                 else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
                     myGame.PlayerHit(0);
